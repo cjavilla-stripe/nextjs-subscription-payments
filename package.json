@@ -1,0 +1,36 @@
+{
+  "name": "nextjs-subscription-starter",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "stripe:listen": "stripe listen --forward-to=localhost:3000/api/webhooks --project-name=saas-starter"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^1.11.0",
+    "@supabase/supabase-js": "^1.0.7",
+    "classnames": "^2.2.6",
+    "next": "10.0.3",
+    "react": "^17.0.1",
+    "react-aria": "^3.1.1",
+    "react-dom": "^17.0.1",
+    "react-merge-refs": "^1.1.0",
+    "stripe": "^8.126.0",
+    "swr": "0.3.9",
+    "tailwindcss": "^2.0.1"
+  },
+  "devDependencies": {
+    "postcss": "^8.1.10",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.0"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
+  }
+}
